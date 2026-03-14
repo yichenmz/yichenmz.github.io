@@ -77,3 +77,26 @@ function showEmailModal(email) {
 		}
 	};
 }
+//时钟
+document.addEventListener('DOMContentLoaded', () => {
+	const clockElement = document.querySelector('.clock');
+
+	setInterval(() => {
+		clockElement.textContent = new Date().toLocaleTimeString('zh-CN', {
+			hour: '2-digit',
+			minute: '2-digit',
+			hour12: false
+		});
+	}, 1000);
+});
+//加载粉丝数
+//调用https://api.codemao.cn/api/user/info/detail/102973524并设置变量bcm_fan为返回的字典中的"fans_total"，调用https://api.bilibili.com/x/relation/stat?vmid=1928185501，并设置变量bilibili_fan为返回的粉丝数，先调用，再一一等到获取到数据赋值// 异步函数：获取API文本并更新到p.sb_text元素
+fetch('https://api.xygeng.cn/openapi/one/get')
+	.then(response => response.text())
+	.then(data => {
+		const match = data.match(/document\.write\(\"([^"]+)\"\)/);
+		const cleanText = match ? match[1] : data;
+		const element = document.querySelector('p.sb_text');
+		if (element) element.textContent = cleanText;
+	})
+	.catch(error => console.error('获取失败:', error));
