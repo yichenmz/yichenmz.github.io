@@ -7,6 +7,7 @@
 		<link rel="stylesheet" href="css/style sheet.css" type="text/css">
 		<script src="
 		js/js.js"></script>
+
 		<link rel="preload" href="fonts/FLjiangdouti-Regular-2.ttf" as="font" type="font/ttf" crossorigin>
 		<link rel="preload" href="fonts/FLjiangdouti-Regular-2.woff2" as="font" type="font/woff2" crossorigin>
 		<!-- 网易云 -->
@@ -24,8 +25,8 @@
 					<img src="img/icon.png" id="top_title_left_title">
 				</a>
 			</div>
-			<div style="text-align:center;padding:1em 0;">
-
+			<div id="top_title_mid">
+				<p class="clock">HH:MM</p>
 			</div>
 			<div id="top_title_right">
 				<img src="img/email.svg" alt="电子邮箱" onclick="email()" class="top_title_right_icons">
@@ -38,6 +39,9 @@
 				</a>
 				<a href="https://space.bilibili.com/1928185501">
 					<img src="img/bilibili.svg" alt="Bilibili" class="top_title_right_icons">
+				</a>
+				<a href="https://www.xiaohongshu.com/user/profile/67abf5f4000000000500d8be">
+					<img src="https://www.xiaohongshu.com/favicon.ico" alt="小红书" class="top_title_right_icons">
 				</a>
 				<div class="top_title_right_icons_div">
 				</div>
@@ -52,8 +56,52 @@
 					<p class="dl" id="right_dl">领异标新二月花
 					</p>
 				</div>
+
 				<p id="real_title_title_cn">毅尘mz的个人领域</p>
 				<p id="real_title_title_en">Yitzhak's Realm Room</p>
+
+			</div>
+			<div class="data_display">
+				<a href="https://space.bilibili.com/1928185501/relation/fans" class="data_detail" id="bilibili">
+					<p class="data_detail_number">不会跨域调用懒得搞，不过应该已经3k+了</p>
+					<div style="display:flex;align-items: center;
+	justify-content: center;">
+						<img width="25px" src="img/bilibili.svg">
+						<p>Bilibili粉丝</p>
+					</div>
+				</a>
+				<a href="https://shequ.codemao.cn/user/102973524/fans" class="data_detail" id="codemao">
+					<p class="data_detail_number">不会跨域调用懒得搞</p>
+					<div style="display:flex;align-items: center;
+	justify-content: center;">
+						<img width="25px" src="https://cdn-community.codemao.cn/community_frontend/favicon.ico">
+						<p>编程猫粉丝</p>
+					</div>
+				</a>
+				<a href="https://www.xiaohongshu.com/user/profile/67abf5f4000000000500d8be" class="data_detail"
+					id="codemao">
+					<p class="data_detail_number">不会跨域调用懒得搞</p>
+					<div style="display:flex;align-items: center;
+	justify-content: center;">
+						<img width="25px" src="https://www.xiaohongshu.com/favicon.ico">
+						<p>小红书粉丝</p>
+					</div>
+				</a>
+			</div>
+
+			<div class="sb_text_div">
+				<p class="sb_text_title">🎇每日一句</p>
+				<p class="sb_text">
+					加载中……
+				</p>
+			</div>
+			<p style="color:#000000;font-size:50px;">请品鉴：</p>
+			<div class="player_div"><iframe
+					src="//player.bilibili.com/player.html?isOutside=true&aid=116187874724755&bvid=BV1ZiNwzPE1Y&cid=36527736216&p=1"
+					class="palyer" scrolling="no" border="0" frameborder="no" framespacing="0"
+					allowfullscreen="true"></iframe>
+				<iframe src="https://player.codemao.cn/new/234554259" class="palyer" scrolling="no" border="0"
+					frameborder="no" framespacing="0" allowfullscreen="true"></iframe>
 			</div>
 			<div class="projects_display">
 				<div style="display: grid;gap:5px">
@@ -195,6 +243,7 @@
 						<img style="height:20px;width:20px;" src="img/bilibili.svg">
 						<p style="color:#3ea2ff">Bilibili</p>
 					</div>
+
 					<div class="project_divp">
 
 
@@ -229,6 +278,10 @@
 								<a class="project_button" href="https://www.bilibili.com/video/BV1nfgBzXENP"
 									style="background-color:#380e01">
 									<p>第四届</p>
+								</a>
+								<a class="project_button" href="https://www.bilibili.com/video/BV1LufvBgE2s"
+									style="background-color:#380e01">
+									<p>[60帧]第五届</p>
 								</a>
 
 							</div>
@@ -346,8 +399,7 @@
 						</div>
 					</div>
 				</div>
-				<p style="color: #3f3f3f;">© 2026 Yitzhak 版权所有 </p>
+				<p style="color: #3f3f3f;">© 2026 Yitzhak 版权没有 侵权不究 </p>
 			</div>
 	</body>
-
 </html>
