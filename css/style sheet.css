@@ -61,7 +61,8 @@ a {
 	right: 20px;
 	display: flex;
 	justify-content: space-between;
-	width: 240px;
+	width: 280px;
+	/*右上角图标总宽度*/
 }
 
 .top_title_right_icons {
